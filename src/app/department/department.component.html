@@ -1,0 +1,8 @@
+<div *ngIf="isCompleted">
+  <div *ngFor="let dep of departments">
+    <div>
+      <div>{{ dep.name }}</div>
+      <app-department [departmentId]="dep.id"></app-department>
+    </div>
+  </div>
+</div>
